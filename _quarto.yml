@@ -25,7 +25,7 @@ book:
     - Appendices/AppendixA.qmd
 
   site-url: https://nmfs-opensci.github.io/quarto-thesis/
-  repo-url: https://github.com/nmfs-opensci/quarto-thesis
+  repo-url: https://github.com/jallow-code/jku-quarto-thesis
   repo-actions: [edit, source, issue]
   search: true
 
