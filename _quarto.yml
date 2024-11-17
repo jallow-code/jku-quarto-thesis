@@ -3,13 +3,20 @@ project:
   output-dir: .
 
 book:
-  title: A doctoral thesis title
-  date: December 15, 2023
+  title: Synthesis of Hydrogels
+  date: August, 2024
   author:
-    name: Jane Doe
-    url: http://www.janedoe.com
+    name: Abdoulie Jallow
+    url: 
   downloads: [pdf]
-  abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis accumsan ante. Quisque lorem metus, varius id urna eget, lacinia dapibus sem. Etiam laoreet, quam ac mollis congue, arcu leo dictum neque, nec euismod sem enim luctus odio. Donec condimentum tortor sit amet mollis volutpat. Donec ornare libero vel velit malesuada consectetur. Vestibulum in sem non justo dignissim congue at quis erat. Integer quis erat vitae mi maximus fringilla tristique nec odio. Morbi non ipsum sapien. Vestibulum tortor est, ultricies in eros et, bibendum iaculis justo. Cras pellentesque enim quam, id pretium lacus lacinia non. Integer velit neque, ultrices a malesuada vel, imperdiet quis enim. Quisque eu facilisis urna, ut faucibus lorem. Donec mollis turpis sed arcu venenatis interdum. Nulla facilisis tortor ac scelerisque consequat."
+  abstract: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis accumsan ante. Quisque lorem metus, varius id urna eget, lacinia dapibus sem. Etiam laoreet, quam ac mollis congue, arcu leo dictum neque, nec euismod sem enim luctus odio. Donec condimentum tortor sit amet mollis volutpat.
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis accumsan ante. Quisque lorem metus, varius id urna eget, lacinia dapibus sem. Etiam laoreet,
+ 
+    quam ac mollis congue, arcu leo dictum neque, nec euismod sem enim luctus odio. Donec condimentum tortor sit amet mollis volutpat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis accumsan ante. Quisque lorem metus, varius id urna eget, lacinia dapibus sem. Etiam laoreet, quam ac mollis congue, arcu leo dictum neque, nec euismod sem enim luctus odio.
+    Donec condimentum tortor sit amet mollis volutpat.
+    
   chapters:
     - index.qmd
     - Chapters/Chapter2.qmd
@@ -23,18 +30,19 @@ book:
   search: true
 
 thesis:
-  supervisor: 
-    name: Dr. Ashok Kunil
-    url: https://quarto.org/
-  degree-name: Doctor of Philosophy
-  university: University of Ottawa
-  department: Department of Mathematics
-  group: Informatics Program
-  faculty: Applied Math Group
+  supervisor:
+    primary: "Assoz. Univ.-Prof. Dr. Ian Teasdale"
+    co: "Dipl.-Ing. Michael Kneidinger"
+  url: https://www.jku.at/en/institute-of-polymer-chemistry/ #Institute url
+  degree-name: Bachelor of Science
+  university: Johannes Kepler Universität Linz
+  department: Institute of Polymer Chemistry
+  group: Biological Chemistry
+  faculty: 
   declaration: "Frontmatter/declaration.tex"
   quotation:
-    text: "Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism."
-    attribution: Dave Barry
+    text: "We make our progress through explanatory conjectures and criticism. And, as Popper says, by letting our ideas 'die in our place'. "
+    attribution: David Deutsch
   acknowledgements: "Frontmatter/acknowledgements.tex"
   abbreviations: "Frontmatter/abbreviations.tex"
   symbols: "Frontmatter/symbols.tex"
@@ -43,6 +51,7 @@ thesis:
   logo-height: "3cm"
 
 bibliography: [example.bib]
+csl: nature-chemistry.csl
 
 execute:
   echo: false
@@ -53,7 +62,10 @@ execute:
 # toclinkcolor changes color of toc, lof and lot links
 format:
   quarto-thesis-pdf: 
-    urlcolor: red
+    urlcolor: blue
     toclinkcolor: black
-    toc-depth: 2
+    toc-depth: 4
+    documentclass: MastersDoctoralThesis
+    classoption: ["11pt", "english", "singlespacing", "headsepline","oneside"]
+    linestretch: 1.2
 

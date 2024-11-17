@@ -9,60 +9,60 @@
 \begin{titlepage}
 \begin{center}
 
-\vspace*{.06\textheight}
-{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
-\textsc{\Large Doctoral Thesis}\\[0.5cm] % Thesis type
-
-\HRule \\[0.4cm] % Horizontal line
-{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
-\HRule \\[1.5cm] % Horizontal line
- 
-\begin{minipage}[t]{0.4\textwidth}
-\begin{flushleft} \large
-\emph{Author:}\\
-$if(author.url)$
-\href{$author.url$}{\authorname} % Author name - remove the \href bracket to remove the link
-$else$
-\authorname
-$endif$
-\end{flushleft}
-\end{minipage}
-\begin{minipage}[t]{0.4\textwidth}
-\begin{flushright} \large
-\emph{Supervisor:} \\
-$if(thesis.supervisor.url)$%
-\href{$thesis.supervisor.url$}{\supname} % Supervisor name - remove the \href bracket to remove the link  
-$else$%
-\supname
-$endif$
-\end{flushright}
-\end{minipage}\\[3cm]
- 
-\vfill
-
-\large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
-\textit{in the}\\[0.4cm]
-\groupname\\
-\deptname\\[2cm] % Research group name and department name
- 
-\vfill
-
+% Add the logo at the top center
 $if(thesis.logo)$
 $if(thesis.logo-height)$
 \includegraphics[height=$thesis.logo-height$]{$thesis.logo$} % University/department logo
 $else$
-\includegraphics{$thesis.logo$}
+\includegraphics[width=0.1\textwidth]{$thesis.logo$} % Adjust the width to make the logo smaller
 $endif$
 $endif$
+
+\vspace*{.06\textheight}
+{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+\textsc{\Large BACHELOR THESIS}\\[0.5cm] % Thesis type
+
+\HRule \\[0.4cm] % Horizontal line
+{\LARGE \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title, changed from \huge to \LARGE
+\HRule \\[1.5cm] % Horizontal line
+
+\begin{tabular}{@{}p{0.4\textwidth}p{0.55\textwidth}@{}}
+\begin{flushleft} \large
+\emph{Author:}\\
+$if(author.url)$
+\href{$author.url$}{\textbf{\authorname}} % Author name - remove the \href bracket to remove the link
+$else$
+\textbf{\authorname}
+$endif$
+\end{flushleft}
+&
+\begin{flushright} \large
+\begin{tabular}{@{}ll@{}}
+\emph{Supervisor:} & \textbf{$thesis.supervisor.primary$} \\
+$if(thesis.supervisor.co)$
+\emph{Co-Supervisor:} & \textbf{$thesis.supervisor.co$} \\
+$endif$
+\end{tabular}
+\end{flushright}
+\end{tabular}\\[3cm]  
+
+\vfill
+
+\large \textit{Bachelor's Thesis to confer the academic degree of\\ \degreename}\\[0.3cm] % University requirement text
+\textit{in}\\[0.4cm]
+\textbf{\groupname}\\
+\href{$thesis.supervisor.url$}{\deptname}\\[2cm] % Research group name and department name with link
+
+\vfill
 
 $if(book.date)$
 {\large $book.date$}\\[4cm] % Date
 $endif$
 
- 
 \vfill
 \end{center}
 \end{titlepage}
+
 
 %----------------------------------------------------------------------------------------
 %	DECLARATION PAGE
