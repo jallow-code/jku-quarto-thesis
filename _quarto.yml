@@ -3,7 +3,7 @@ project:
   output-dir: .
 
 book:
-  title: Synthesis of Hydrogels
+  title: Synthesis of Hydrogels by Inclusion Complexation between Poly(organo)phosphazenes and $α$-cyclodextrin
   date: August, 2024
   author:
     name: Abdoulie Jallow
@@ -33,10 +33,10 @@ thesis:
   supervisor:
     primary: "Assoz. Univ.-Prof. Dr. Ian Teasdale"
     co: "Dipl.-Ing. Michael Kneidinger"
-  url: https://www.jku.at/en/institute-of-polymer-chemistry/ #Institute url
   degree-name: Bachelor of Science
   university: Johannes Kepler Universität Linz
   department: Institute of Polymer Chemistry
+  url: "https://www.jku.at/en/institute-of-polymer-chemistry/" #Institute url
   group: Biological Chemistry
   faculty: 
   declaration: "Frontmatter/declaration.tex"
@@ -67,5 +67,5 @@ format:
     toc-depth: 4
     documentclass: MastersDoctoralThesis
     classoption: ["11pt", "english", "singlespacing", "headsepline","oneside"]
-    linestretch: 1.2
+    
 
