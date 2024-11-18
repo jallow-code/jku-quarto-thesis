@@ -1,6 +1,6 @@
 # Background
 
-This git repo provides a template for writing bachelor or diploma thesis using Quarto. Originally adapted from a LaTeX template by [Eli Holmes](https://github.com/nmfs-opensci/quarto-thesis), I tailored it to meet JKU’s requirements. The template can also be use for phd desertation (orginal design).
+This Git repository offers a Quarto template for writing bachelor’s, diploma, and dissertation theses. Originally adapted from a LaTeX template by [Eli Holmes](https://github.com/nmfs-opensci/quarto-thesis), this version has been customized to meet the specific requirements of Johannes Kepler University (JKU).
 
 ## Installing the extension
 
@@ -12,7 +12,7 @@ quarto use template jallow-code/jku-quarto-thesis
 
 It will ask for an empty directory name where to put the files, give it a new directory name.
 
-Once you do that you can cd to the new directory and render from within the directory.
+Once you do that you can `cd` to the new directory and render from within the directory.
 
 ``` bash
 quarto render
@@ -34,31 +34,7 @@ quarto install extension jallow-code/jku-quarto-thesis
 
 ## Basic Usage and Customization
 
-The template have bachelor thesis as a default. Therefore, to change it to a master or Phd dissertation you will the have to edit the `_extensions/quarto-thesis/partials/before-body.tex` file. Scroll down to the title page of the file and edit the line that contain thesis type.
-
-%----------------------------------------------------------------------------------
-%	TITLE PAGE
-%----------------------------------------------------------------------------------
-
-\begin{titlepage}
-\begin{center}
-
-% Add the logo at the top center
-$if(thesis.logo)$
-$if(thesis.logo-height)$
-\includegraphics[height=$thesis.logo-height$]{$thesis.logo$} % University/department logo
-$else$
-\includegraphics[width=0.1\textwidth]{$thesis.logo$} % Adjust the width to make the logo smaller
-$endif$
-$endif$
-
-\vspace*{.06\textheight}
-{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
-\textsc{\Large BACHELOR THESIS}\\[0.5cm] % Thesis type
-
-\HRule \\[0.4cm] % Horizontal line
-{\LARGE \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title, changed from \huge to \LARGE
-\HRule \\[1.5cm] % Horizontal line
+This template have bachelor thesis as a default. Therefore, to change it to a master or Phd dissertation you will the have to edit the `_extensions/quarto-thesis/partials/before-body.tex` file. Scroll down to the title page of the file and edit the line that contain thesis type.
 
 Additionally, you may want to exclude some sections of the frontmatter (e.g dedication, constants etc..). This can be achieved simply by commenting out that section from the `_quarto.yml`:
 
@@ -85,8 +61,8 @@ thesis:
   logo-height: "3cm"
 ---
 
-This will leave out the dedication page from the rendered documents. Checkout the pdf file in the repo to learn more about the usage of the template. You may have to write some `Latex` code to further customize this template if you have other specific requirements. [Eli Holmes](https://github.com/nmfs-opensci/quarto-thesis) also excellent video tutorials you may find useful.
+This will leave out the dedication page from the rendered document. Checkout the pdf file in the repo to learn more about the usage of the template. You may have to write some `Latex` code to further customize this template if you have other specific requirements. [Eli Holmes](https://github.com/nmfs-opensci/quarto-thesis) made excellent video tutorials that you may find useful.
 
 ## Example
 
-![](Synthesis-of-Hydrogels-by-Inclusion-Complexation-between-Poly-organo-phosphazenes-and-$α$-cyclodextrin.pdf)
+$$embed$$[Bachelor thesis](https://github.com/jallow-code/jku-quarto-thesis/blob/main/Synthesis-of-Hydrogels-by-Inclusion-Complexation-between-Poly-organo-phosphazenes-and-%24%CE%B1%24-cyclodextrin.pdf)$$/embed$$
