@@ -36,7 +36,6 @@ thesis:
   degree-name: Bachelor of Science
   university: Johannes Kepler Universität Linz
   department: Institute of Polymer Chemistry
-  url: "https://www.jku.at/en/institute-of-polymer-chemistry/" #Institute url
   group: Biological Chemistry # program
   faculty: Faculty of Engineering and Natural Sciences
   declaration: "Frontmatter/declaration.tex"
