@@ -30,10 +30,11 @@ book:
   search: true
 
 thesis:
+  type: Bachelor Thesis # Or "Master Thesis", "Doctoral Dissertation", etc.
+  degree-name: Bachelor Thesis
   supervisor:
     primary: "Assoz. Univ.-Prof. Dr. Ian Teasdale"
     co: "Dipl.-Ing. Michael Kneidinger"
-  degree-name: Bachelor of Science
   university: Johannes Kepler Universität Linz
   department: Institute of Polymer Chemistry
   group: Biological Chemistry # program
