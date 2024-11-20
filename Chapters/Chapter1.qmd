@@ -13,7 +13,7 @@ Welcome to this \LaTeX{} Thesis Template, using the \LaTeX{} typesetting system 
 
 ## A Short Math Guide for \LaTeX{}
 
-If you are writing a technical or mathematical thesis, then you may want to read the document by the AMS (American Mathematical Society) called, `A Short Math Guide for \LaTeX{}". It can be found online at [AMS](http://www.ams.org/tex/amslatex.html)  under the`Additional Documentation" section towards the bottom of the page.
+If you are writing a technical or mathematical thesis, then you may want to read the document by the AMS (American Mathematical Society) called, A Short Math Guide for \LaTeX{}. It can be found [online](http://www.ams.org/tex/amslatex.html) under the `Additional Documentation` section towards the bottom of the page.
 
 ### Common \LaTeX{} Math Symbols
 
@@ -23,7 +23,7 @@ You can use this page as a reference or crib sheet, the symbols are rendered as 
 
 ## About this Template
 
-This \LaTeX{} Thesis Template is originally based and created around a \LaTeX{} style file created by Steve R. Gunn from the University of Southampton (UK), department of Electronics and Computer Science. You can find his original thesis style file at his site, here: http://www.ecs.soton.ac.uk/\~srg/softwaretools/document/templates/.
+This \LaTeX{} Thesis Template is originally based and created around a \LaTeX{} style file created by Steve R. Gunn from the University of Southampton (UK), department of Electronics and Computer Science. You can find his original thesis style file at his site, [here](http://www.ecs.soton.ac.uk/~srg/softwaretools/document/templates/).
 
 Steve's `ecsthesis.cls` was then taken by Sunil Patel who modified it by creating a skeleton framework and folder structure to place the thesis files in. The resulting template can be found on Sunil's site here: http://www.sunilpatel.co.uk/thesis-template.
 
