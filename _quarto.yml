@@ -3,7 +3,7 @@ project:
   output-dir: .
 
 book:
-  title: Synthesis of Hydrogels using Poly(organo)phosphazenes and $α$-cyclodextrin
+  title: Synthesis of Hydrogels by Inclusion Complexation between Poly(organo)phosphazenes and $α$-cyclodextrin
   date: August, 2024
   author:
     name: Abdoulie Jallow
@@ -31,7 +31,7 @@ book:
 
 thesis:
   type: Bachelor Thesis # Or "Master Thesis", "Doctoral Dissertation", etc.
-  degree-name: Bachelor Science
+  degree-name: Bachelor of Science
   group: Biological Chemistry # name of your study program
   supervisor:
     primary: "Assoz. Univ.-Prof. Dr. Ian Teasdale"
